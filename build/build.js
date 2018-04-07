@@ -90,7 +90,8 @@ function chooseFormatType() {
             message: '请选择要输出的模块类型',
             default: [
                 'umd',
-                'es'
+                'es',
+                'cjs'
             ],
             choices: [
                 {
@@ -191,7 +192,7 @@ async function outputDistFile(config) {
 }
 
 /**
- * 构建流程方法（包括选择输出文件类型，输出编译后文件操作）
+ * 异步函数，构建流程方法（包括选择输出文件类型，输出编译后文件操作）
  *
  * @return {Promise.<void>}
  */

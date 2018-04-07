@@ -14,11 +14,11 @@
 })(this, function() {
     "use strict";
 
-    var classCallCheck = function(instance, Constructor) {
+    function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
             throw new TypeError("Cannot call a class as a function");
         }
-    };
+    }
 
     /**
      * @file BdScroll插件主文件
@@ -30,10 +30,13 @@
             arguments.length > 0 && arguments[0] !== undefined
                 ? arguments[0]
                 : {};
-        classCallCheck(this, BdScroll);
+
+        _classCallCheck(this, BdScroll);
 
         console.log(options);
     };
+
+    BdScroll.Version = "1.0.0";
 
     return BdScroll;
 });

@@ -5,6 +5,8 @@
  * Copyright (c) 2017-2018
  * Released under the MIT license
  */
+"use strict";
+
 function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
         throw new TypeError("Cannot call a class as a function");
@@ -27,4 +29,4 @@ var BdScroll = function BdScroll() {
 
 BdScroll.Version = "1.0.0";
 
-export default BdScroll;
+module.exports = BdScroll;
