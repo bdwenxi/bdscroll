@@ -12,7 +12,7 @@ function _classCallCheck(instance, Constructor) {
 }
 
 /**
- * @file BdScroll插件主文件
+ * @file BdScroll plugin entry
  * @author simmons8616(simmons0616@gmail.com)
  */
 

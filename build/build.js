@@ -36,28 +36,7 @@ const banner = `/*!
  * @return {*}
  */
 const getProRollUpConfig = ({filename = 'bdscroll', format, moduleName = 'BdScroll', min = false}) => {
-    if (min) {
-        return {
-            input: './src/index.js',
-            output: {
-                file: './dist/bdscroll.min.js',
-                format,
-                name: moduleName
-            },
-            plugins: [
-                resolve(),
-                babel(
-                    {
-                        exclude: 'node_modules/**'
-                    }
-                )
-            ],
-            banner,
-            min
-        };
-    }
-
-    return {
+    const basicConfig = {
         input: './src/index.js',
         output: {
             file: `./dist/${filename}.js`,
@@ -75,6 +54,21 @@ const getProRollUpConfig = ({filename = 'bdscroll', format, moduleName = 'BdScro
         banner,
         min
     };
+
+    if (min) {
+        return Object.assign(
+            basicConfig,
+            {
+                output: {
+                    file: './dist/bdscroll.min.js',
+                    format,
+                    name: moduleName
+                }
+            }
+        );
+    }
+
+    return basicConfig;
 };
 
 /**
