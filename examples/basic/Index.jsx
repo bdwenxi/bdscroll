@@ -4,12 +4,13 @@
  */
 
 import React, {Component, Fragment} from 'react';
+import Scroll from 'examples/scroll/Scroll';
 
 export default class Main extends Component {
     render() {
         return (
             <Fragment>
-                Main Page
+                <Scroll/>
             </Fragment>
         );
     }

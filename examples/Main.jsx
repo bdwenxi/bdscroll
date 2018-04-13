@@ -1,20 +1,20 @@
 /**
- * @file BdScroll插件demo入口文件
+ * @file BdScroll插件demo入口组件
  * @author simmons8616(simmons0616@gmail.com)
  */
 
 import React, {Component} from 'react';
-
-import {render} from 'react-dom';
-
 import {
     HashRouter,
     Route,
     Switch,
     Redirect
 } from 'react-router-dom';
+import {hot} from 'react-hot-loader';
 
 import Basic from 'examples/basic/Index';
+
+import 'examples/scss/main.scss';
 
 class App extends Component {
     render() {
@@ -31,7 +31,4 @@ class App extends Component {
     }
 }
 
-render(
-    <App />,
-    document.getElementById('app')
-);
+export default hot(module)(App);

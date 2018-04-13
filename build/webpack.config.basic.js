@@ -12,7 +12,7 @@ const babelConf = getBabelConfig();
 module.exports = {
     context: path.join(__dirname, '..'),
     entry: {
-        main: './examples/main.jsx'
+        main: './examples/entry/main.jsx'
     },
     resolve: {
         modules: [
@@ -25,9 +25,9 @@ module.exports = {
         extensions: ['.js', '.jsx', '.css', '.scss']
     },
     output: {
-        publicPath: '/bdscroll/dist/dev/',
-        path: path.resolve(__dirname, '..', 'dist', 'dev'),
-        filename: 'js/[name].js'
+        publicPath: '/',
+        path: undefined,
+        filename: '[name].js'
     },
     module: {
         rules: [
