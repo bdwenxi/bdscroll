@@ -6,6 +6,7 @@
 const webpack = require('webpack');
 const devMiddleware = require('webpack-dev-middleware');
 const hotMiddleware = require('webpack-hot-middleware');
+const inquirer = require('inquirer');
 const express = require('express');
 const app = express();
 
@@ -13,27 +14,62 @@ const devConfig = require('./webpack.config.dev');
 const publicPath = devConfig.output.publicPath;
 const compiler = webpack(devConfig);
 
-app.use(
-    devMiddleware(
-        compiler,
+function chooseDeployPort() {
+    const questions = [
         {
-            quiet: true,
-            publicPath
+            type: 'input',
+            name: 'port',
+            message: '请输入要部署服务的端口号',
+            default: 7777
         }
-    )
-);
+    ];
 
-app.use(
-    hotMiddleware(
-        compiler,
-        {
-            log() {},
-            heartbeat: 1000
+    return new Promise(
+        (resolve, reject) => {
+            inquirer
+                .prompt(questions)
+                .then(
+                    answers => {
+                        try {
+                            resolve(answers.port);
+                        }
+                        catch (e) {
+                            reject(e);
+                        }
+                    }
+                );
         }
-    )
-);
+    );
+}
 
-app.listen(
-    7777,
-    () => console.log(`BdScroll本地测试服务已于${7777}端口部署`)
-);
+async function develop() {
+    const port = await chooseDeployPort();
+
+    app.use(
+        devMiddleware(
+            compiler,
+            {
+                quiet: true,
+                publicPath
+            }
+        )
+    );
+
+    app.use(
+        hotMiddleware(
+            compiler,
+            {
+                log() {},
+                heartbeat: 1000
+            }
+        )
+    );
+
+    app.listen(
+        +port,
+        () => console.log(`BdScroll本地测试服务已于${+port}端口部署`)
+    );
+}
+
+// 启动测试服务
+develop();

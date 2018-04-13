@@ -2,7 +2,6 @@
  * @file webpack dev环境配置文件
  * @author simmons8616(simmons0616@gmail.com)
  */
-const path = require('path');
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
@@ -62,7 +61,7 @@ module.exports = devStrategy(
                 name: 'manifest'
             },
             splitChunks: {
-                chunks: "all",
+                chunks: 'all',
                 minSize: 30000,
                 minChunks: 1,
                 maxAsyncRequests: 5,

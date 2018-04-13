@@ -4,10 +4,9 @@
  */
 
 const path = require('path');
-const fs = require('fs');
 
-const {getBabelConfig} = require('./utils');
-const babelConf = getBabelConfig();
+const utils = require('./utils');
+const babelConf = utils.getBabelConfig();
 
 module.exports = {
     context: path.join(__dirname, '..'),
