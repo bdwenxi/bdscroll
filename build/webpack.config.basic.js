@@ -7,6 +7,7 @@ const path = require('path');
 
 const utils = require('./utils');
 const babelConf = utils.getBabelConfig();
+const {presets, plugins} = babelConf;
 
 module.exports = {
     context: path.join(__dirname, '..'),
@@ -35,8 +36,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: babelConf.presets,
-                        plugins: babelConf.plugins
+                        presets,
+                        plugins
                     }
                 },
                 exclude: ['node_modules']
@@ -46,8 +47,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: babelConf.presets.concat(['react']),
-                        plugins: babelConf.plugins
+                        presets: presets.concat(['react']),
+                        plugins
                     }
                 }
             }

@@ -6,12 +6,15 @@
 import React, {Component, Fragment} from 'react';
 import Scroll from 'examples/scroll/Scroll';
 
-export default class Main extends Component {
+export default class Basic extends Component {
     render() {
         return (
-            <Fragment>
-                <Scroll/>
-            </Fragment>
+            <div className="bdscroll-inner">
+                <div className="bdscroll-content">
+                    <span className="top">top</span>
+                    <span className="bottom">bottom</span>
+                </div>
+            </div>
         );
     }
 }

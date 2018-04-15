@@ -14,6 +14,7 @@ const rollup = require('rollup');
 const resolve = require('rollup-plugin-node-resolve');
 const babel = require('rollup-plugin-babel');
 const uglify = require('uglify-js');
+const fecs = require('fecs');
 
 const pkg = JSON.parse(
     fs.readFileSync(path.join(__dirname, '..', 'package.json'))
@@ -47,7 +48,8 @@ const getProRollUpConfig = ({filename = 'bdscroll', format, moduleName = 'BdScro
             resolve(),
             babel(
                 {
-                    exclude: 'node_modules/**'
+                    exclude: 'node_modules/**',
+                    plugins: ['external-helpers']
                 }
             )
         ],
@@ -177,7 +179,8 @@ async function outputDistFile(config) {
             outputCode,
             {
                 tabWidth: 4,
-                bracketSpacing: false
+                arrowParens: 'avoid',
+                trailingComma: 'es5'
             }
         );
 
