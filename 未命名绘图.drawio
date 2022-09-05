@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-05T10:14:53.971Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="VthBw31m6kxbVb2c3si2" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-05T11:00:27.067Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="SGuSq3EeC7RvmtBVobRz" version="20.2.8" type="github">
   <diagram id="uoqRytM2XE6J9On9qTQU" name="第 1 页">
     <mxGraphModel dx="2505" dy="2141" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SYEgB2U9We9SsdnWn9XJ-6" target="SYEgB2U9We9SsdnWn9XJ-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SYEgB2U9We9SsdnWn9XJ-44" value="三套方案可独立解耦、也可灵活组合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#FF0000;" vertex="1" connectable="0" parent="SYEgB2U9We9SsdnWn9XJ-16">
+        <mxCell id="SYEgB2U9We9SsdnWn9XJ-44" value="三套方案可独立解耦、也可灵活组合，由Controller层调度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#FF0000;" vertex="1" connectable="0" parent="SYEgB2U9We9SsdnWn9XJ-16">
           <mxGeometry x="-0.7627" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -51,17 +51,14 @@
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FF0000;" edge="1" parent="1" source="SYEgB2U9We9SsdnWn9XJ-31" target="SYEgB2U9We9SsdnWn9XJ-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SYEgB2U9We9SsdnWn9XJ-31" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="250" y="-90" width="190" height="120" as="geometry" />
+        <mxCell id="SYEgB2U9We9SsdnWn9XJ-31" value="&lt;h1 style=&quot;text-align: left; font-size: 20px;&quot;&gt;分级消息服务&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-90" width="210" height="120" as="geometry" />
         </mxCell>
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=22;fontColor=#FF0000;" edge="1" parent="1" source="SYEgB2U9We9SsdnWn9XJ-32" target="SYEgB2U9We9SsdnWn9XJ-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-32" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="-60" y="-90" width="190" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="SYEgB2U9We9SsdnWn9XJ-34" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;分级消息服务&lt;/font&gt;&lt;/h1&gt;&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;dashed=1;opacity=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="-45" width="170" height="50" as="geometry" />
         </mxCell>
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-38" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;WebRTC推拉流SDK&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;dashed=1;opacity=0;" vertex="1" parent="1">
           <mxGeometry x="-39" y="-54" width="170" height="50" as="geometry" />
