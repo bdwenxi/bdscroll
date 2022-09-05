@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-05T11:00:27.067Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="SGuSq3EeC7RvmtBVobRz" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-05T11:27:49.753Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="vRe1sKAV_AoMAUfFIqW8" version="20.2.8" type="github">
   <diagram id="uoqRytM2XE6J9On9qTQU" name="第 1 页">
-    <mxGraphModel dx="2505" dy="2141" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2025" dy="1982" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -63,11 +63,16 @@
         <mxCell id="SYEgB2U9We9SsdnWn9XJ-38" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;WebRTC推拉流SDK&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;dashed=1;opacity=0;" vertex="1" parent="1">
           <mxGeometry x="-39" y="-54" width="170" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="SYEgB2U9We9SsdnWn9XJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=20;fontColor=#FF0000;" edge="1" parent="1" source="SYEgB2U9We9SsdnWn9XJ-41" target="SYEgB2U9We9SsdnWn9XJ-6">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="SYEgB2U9We9SsdnWn9XJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=20;fontColor=#FF0000;" edge="1" parent="1" target="SYEgB2U9We9SsdnWn9XJ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="880" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="SYEgB2U9We9SsdnWn9XJ-41" value="&lt;h1 style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;V2 版本 “端”“云”结合&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="77.5" y="880" width="235" height="100" as="geometry" />
+        <mxCell id="SYEgB2U9We9SsdnWn9XJ-46" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="25" y="880" width="340" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="SYEgB2U9We9SsdnWn9XJ-47" value="&lt;h1&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;V2版 “端”“云” 结合&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;特点：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;1、可保障活体检测效果最优&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;2、稳定性高（不受网络环境影响、支持离线检测）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;3、兼容性最优&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;dashed=1;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="891" width="320" height="194" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
